@@ -1,4 +1,40 @@
-%h2 
-  Binevenido:
-  = user.name
+.page-header
+  %h2
+    =user.name
+    %small
+      (#{user.username})
+
+.content
+  .user-left
+    .panel.panel-default.user-information
+      .panel-heading
+        %h3.panel-title
+          Biography
+      .panel-body
+        Lorem impsu... 
+
+    .panel.panel-default.user-information
+      .panel-heading
+        %h3.panel-title
+          Personal Information
+      .panel-body
+        Lorem impsu... 
+
+  .user-right
+    .panel.panel-default.user-events
+      .panel-heading
+        %h3.panel-title
+          User's Events
+      .panel-body
+        %p Lorem impsu... 
+        %p Lorem impsu... 
+        %p Lorem impsu... 
+        %p Lorem impsu... 
+        %p Lorem impsu... 
+        %p Lorem impsu... 
+       
+.footer
+  %p 
+  memeber since
+  =user.member_since
 
