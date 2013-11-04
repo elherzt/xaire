@@ -31,6 +31,8 @@ gem 'devise'
 
 gem 'haml'
 
+gem 'decent_exposure'
+
 gem 'pry'
 gem 'pry-doc'
 gem 'pry-rails'
