@@ -13,8 +13,12 @@
       %ul
         %li.nav.navbar-nav.user
           %span
-            =link_to current_user.username, current_user
+            = link_to 'New Event', new_user_event_path(current_user.id)
+
+        %li.nav.navbar-nav.user
+          %span
+            = link_to current_user.username, current_user
           |
           %span
             =link_to 'log out', destroy_user_session_path, method: :delete 
-
+        
