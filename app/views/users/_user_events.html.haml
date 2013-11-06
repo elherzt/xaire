@@ -1,0 +1,14 @@
+-user.all_user_events.each do |e|
+  -status = state(e)
+  %h3
+    =e.name
+    %span{class: "label label-#{status[0]}"} 
+      =status[1]
+  %hr
+  %h5 
+    =e.description
+  %span.labe.label-primary 
+    Date:
+    ="from #{e.start_date} to #{e.end_date}"
+  %br
+

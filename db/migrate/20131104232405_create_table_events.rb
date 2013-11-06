@@ -4,7 +4,8 @@ class CreateTableEvents < ActiveRecord::Migration
       t.integer :user_id
       t.string  :name
       t.string  :description
-      t.string  :date
+      t.string  :start_date, 
+      t.string  :end_date,   
       t.string  :place
       t.string  :cost
       t.string  :hour

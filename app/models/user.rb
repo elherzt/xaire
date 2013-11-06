@@ -5,4 +5,8 @@ class User < ActiveRecord::Base
   def member_since
     created_at.strftime("%F")
   end
+
+  def all_user_events
+    events
+  end
 end
