@@ -15,3 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= bootstrap.min.js
+
+$(document).ready(function(){
+  $(".select_date").datepicker({
+    format: 'dd/mm/yyyy'
+})
+});

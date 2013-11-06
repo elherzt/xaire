@@ -33,6 +33,8 @@ gem 'haml'
 
 gem 'decent_exposure'
 
+gem 'simple_form'
+
 gem 'pry'
 gem 'pry-doc'
 gem 'pry-rails'
