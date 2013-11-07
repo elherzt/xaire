@@ -13,11 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-datepicker.js
 //= require_tree .
 //= bootstrap.min.js
 
-$(document).ready(function(){
-  $(".select_date").datepicker({
-    format: 'dd/mm/yyyy'
-})
-});
+

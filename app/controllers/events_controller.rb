@@ -10,7 +10,8 @@ class EventsController < ApplicationController
   
   def create
     if event.save
-      redirect_to event
+      redirect_to user_event_path(id: event.id)
+
     else
       redirect_to "new"
     end
