@@ -35,6 +35,7 @@ gem 'decent_exposure'
 
 gem 'simple_form'
 
+gem 'draper'
 gem 'pry'
 gem 'pry-doc'
 gem 'pry-rails'
