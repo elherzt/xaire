@@ -1,1 +1,21 @@
-%h1 Hello
+%h1
+  =event.name
+%h3
+  =event.description
+=image_tag("idk.jpg")
+%h3
+  %span.strong.label.label-info
+    Place:
+    =event.place
+  %span.strong.label.label-primary
+    Cost:
+    =event.cost
+  %span.strong.label.label-success
+    Time:
+    =event.hour
+%h3
+  Requirements:
+  =event.requirements
+%h3 
+  Notes:
+  =event.notes

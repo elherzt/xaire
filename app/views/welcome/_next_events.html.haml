@@ -1,0 +1,15 @@
+- @events.next.each do |event|
+  -status = state(event)
+  %h3
+    =link_to event.name, user_event_path(event.user_id, event)
+    %span{class: "label label-#{status[0]}"} 
+      =status[1]
+  %h5 
+    =event.description
+  %span.labe.label-primary 
+    Date:
+    ="from #{event.start_date} to #{event.end_date.present? ? event.end_date : event.start_date}"
+  %br
+  %hr
+
+
